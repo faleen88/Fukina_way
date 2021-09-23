@@ -1,1 +1,11 @@
+// Global
 
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
