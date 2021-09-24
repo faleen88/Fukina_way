@@ -1,5 +1,11 @@
 .container {
   width: 1170px;
   margin: 0 auto;
-  padding: 0 375px;
+  padding: 0 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }

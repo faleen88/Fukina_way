@@ -8,20 +8,31 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header container">
-      <nav class="main-nav">
+    <header class="main-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs container">
         <div class="main-nav__logo">
           <picture>
+            <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
             <img src="img/logo.svg" alt="Логотип туроператора">
           </picture>
         </div>
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О путешествии</a>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">
+              <span>О путешествии</span>
+              <svg class="site-nav__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Цены</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">
+              <span>Цены</span>
+              <svg class="site-nav__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <a class="main-nav__contacts" href="tel:+749978468446" aria-label="Телефон для связи +7 (499) -784-684-46">
@@ -86,6 +97,8 @@
         <p class="special-offer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
       </section>
     </footer>
+
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
