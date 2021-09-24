@@ -20,6 +20,11 @@
     padding-top: 17px;
     padding-left: 21px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 18px;
+    padding-left: 16px;
+  }
 }
 
 .main-nav__toggle {
