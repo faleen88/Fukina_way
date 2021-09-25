@@ -1,0 +1,15 @@
+.button {
+  color: $white;
+  font-family: $fontFamily;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: $accent;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    min-height: 50px;
+  }
+}
