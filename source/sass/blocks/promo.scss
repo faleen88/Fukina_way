@@ -35,7 +35,7 @@
 .promo__container {
   width: 379px;
   margin: 0 auto;
-  padding: 185px 0 0 590px;
+  padding: 185px 0 0 610px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -95,7 +95,7 @@
   margin-bottom: 35px;
   color: $white;
   line-height: 27px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.03em;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 11px;
