@@ -1,0 +1,67 @@
+.tabs {
+  margin-bottom: 234px;
+}
+
+.tabs__container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.tabs__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tabs__nav-item {
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  &:not(:last-child) {
+    padding-right: 99px;
+  }
+}
+
+.tabs__link {
+  color: $dark;
+  opacity: 0.3;
+
+  &--active {
+    color: $accent;
+    opacity: 1;
+    cursor: auto;
+  }
+
+  &:hover {
+    color: $accent;
+    opacity: 1;
+  }
+}
+
+.tabs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1444px;
+    height: 1089px;
+    background-image: url("../img/map.svg");
+    z-index: -1;
+  }
+}

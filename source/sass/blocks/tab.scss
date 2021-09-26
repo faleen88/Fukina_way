@@ -1,0 +1,50 @@
+.tab {
+  display: grid;
+  grid-template-columns: 470px 430px 270px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.tab__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  margin-bottom: 31px;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $accent;
+  }
+}
+
+.tab__text {
+  padding-right: 100px;
+  margin: 0;
+  margin-bottom: 49px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+}
+
+.tab__button {
+  width: 250px;
+  height: 75px;
+}
+
+.tab__review {
+  width: 322px;
+  padding: 30px;
+  margin-left: -112px;
+  align-self: center;
+}

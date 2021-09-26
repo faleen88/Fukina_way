@@ -1,0 +1,45 @@
+.review {
+  background-color: $white;
+}
+
+.review_title {
+  margin: 0;
+  padding-bottom: 13px;
+  margin-bottom: 21px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    height: 1px;
+    background-color: $accent;
+  }
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+}
+
+.review__autor {
+  display: flex;
+  align-items: center;
+}
+
+.review__autor-name {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}

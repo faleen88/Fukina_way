@@ -127,14 +127,14 @@
       <section class="tabs">
         <div class="tabs__container">
           <ul class="tabs__nav">
-            <li class="tabs__nav-item"><a class="tabs__link tabs__link--active" href="#">Греция</a></li>
-            <li class="tabs__nav-item"><a class="tabs__link" href="#">Албания</a></li>
-            <li class="tabs__nav-item"><a class="tabs__link" href="#">Македония</a></li>
-            <li class="tabs__nav-item"><a class="tabs__link" href="#">Черногория</a></li>
-            <li class="tabs__nav-item"><a class="tabs__link" href="#">Хорватия</a></li>
+            <li class="tabs__nav-item"><a class="tabs__link tabs__link--active" href="#greece" data-way="greece">Греция</a></li>
+            <li class="tabs__nav-item"><a class="tabs__link" href="#albania" data-way="albania">Албания</a></li>
+            <li class="tabs__nav-item"><a class="tabs__link" href="#macedonia" data-way="macedonia">Македония</a></li>
+            <li class="tabs__nav-item"><a class="tabs__link" href="#montenegro" data-way="montenegro">Черногория</a></li>
+            <li class="tabs__nav-item"><a class="tabs__link" href="#croatia" data-way="croatia">Хорватия</a></li>
           </ul>
           <ul class="tabs__list">
-            <li class="tabs__item tab">
+            <li class="tabs__item tab" id="#greece">
               <div class="tab__description">
                 <h2 class="tab__title">Греция</h2>
                 <p class="tab__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
@@ -146,15 +146,15 @@
               <div class="tab__review review">
                 <h2 class="review_title">Отзывы</h2>
                 <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-                <div class="review__autor autor">
+                <div class="review__autor">
                   <picture>
-                    <img class="autor__avatar" src="img/avatar-1.jpg" srcset="img/avatar-1.jpg 1x, img/avatar-1@2x.jpg 2x" alt="Девушка с темными волосами до середины шеи">
+                    <img class="review__avatar" src="img/avatar-1.jpg" srcset="img/avatar-1.jpg 1x, img/avatar-1@2x.jpg 2x" alt="Девушка с темными волосами до середины шеи">
                   </picture>
-                  <b class="autor__name">Влада Голицина</b>
+                  <span class="review__autor-name">Влада Голицина</span>
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab visually-hidden">
+            <li class="tabs__item tab tab--hidden" id="#albania">
               <div class="tab__description">
                 <h2 class="tab__title">Албания</h2>
                 <p class="tab__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
@@ -174,7 +174,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab visually-hidden">
+            <li class="tabs__item tab tab--hidden" id="#macedonia">
               <div class="tab__description">
                 <h2 class="tab__title">Македония</h2>
                 <p class="tab__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -194,7 +194,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab visually-hidden">
+            <li class="tabs__item tab tab--hidden" id="#montenegro">
               <div class="tab__description">
                 <h2 class="tab__title">Черногория</h2>
                 <p class="tab__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
@@ -214,7 +214,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab visually-hidden">
+            <li class="tabs__item tab tab--hidden" id="#croatia">
               <div class="tab__description">
                 <h2 class="tab__title">Хорватия</h2>
                 <p class="tab__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
