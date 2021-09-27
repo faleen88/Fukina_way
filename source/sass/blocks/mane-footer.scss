@@ -1,13 +1,16 @@
 .main-footer {
+  padding-bottom: 74px;
   display: grid;
   grid-template-columns: 387px 397px 1fr;
 
   @media (max-width: $tablet-width) {
+    padding-bottom: 54px;
     grid-template-columns: 54% 46%;
     grid-template-rows: auto auto;
   }
 
   @media (max-width: $mobile-width) {
+    padding-bottom: 26px;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
   }

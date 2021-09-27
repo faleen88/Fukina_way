@@ -1,5 +1,13 @@
 .form-section {
   margin-bottom: 160px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 81px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form-section__container {
@@ -12,11 +20,21 @@
     width: 100%;
     padding: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    min-height: 441px;
+    background-color: $light;
+  }
 }
 
 .form-section__form {
   padding: 70px 0 70px 514px;
-  background-image: url("../img/form-desctop.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+
+  @media (max-width: $tablet-width) {
+    padding: 71px 54px 73px 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
