@@ -350,6 +350,32 @@
       </section>
     </footer>
 
+    <section class="modal">
+      <form class="modal__form form-connection" method="POST" action="https://echo.htmlacademy.ru">
+        <picture>
+          <img src="img/popup.jpg" srcset="img/popup.jpg 1x, img/popup@2x.jpg 2x" alt="Мщрской пляж с черным песком">
+        </picture>
+        <div class="form-connection__container">
+          <h2 class="form-connection__title">Купить тур</h2>
+          <ul class="form-connection__list">
+            <li class="form-connection__item phone">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="phone__input" type="tel" name="phone" id="phone" placeholder="+7 Введите 10 цифр номера" required>
+            </li>
+            <li class="form-connection__item email">
+              <label class="visually-hidden" for="e-mail">E-mail</label>
+                <input class="email__input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+            </li>
+          </ul>
+          <button class="form-connection__button button" type="submit" aria-label="Отправить данные">отправить</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="popup-success">
+      <p class="popup-success__message">Форма успешно отправлена, спасибо! :)</p>
+    </div>
+
     <script src="js/script.min.js"></script>
 
   </body>
