@@ -1,0 +1,42 @@
+.data {
+  position: relative;
+}
+
+.form-connection__icon {
+  position: absolute;
+  width: 6px;
+  height: 26px;
+  top: 0;
+  left: 15px;
+}
+
+.data__input {
+  min-height: 48px;
+  padding: 0;
+  border: 1px solid #d7d9df;
+
+  &::placeholder {
+    font-family: $fontFamily;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--phone {
+    width: 227px;
+    padding-left: 26px;
+    padding-right: 15px;
+
+    @media (max-width: $mobile-width) {
+      width: 245px;
+    }
+  }
+
+  &--email {
+    width: 238px;
+    padding: 0 15px;
+
+    @media (max-width: $mobile-width) {
+      width: 256px;
+    }
+  }
+}

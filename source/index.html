@@ -264,7 +264,7 @@
             </div>
           </div>
           <ul class="price__list">
-            <li class="price__item item-price item-price--active">
+            <li class="price__item item-price">
               <div class="item-price__container">
                 <h3 class="item-price__title">
                   Комплексный
@@ -402,21 +402,25 @@
       </section>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal--connection" id="connection">
       <form class="modal__form form-connection" method="POST" action="https://echo.htmlacademy.ru">
         <picture>
-          <img src="img/popup.jpg" srcset="img/popup.jpg 1x, img/popup@2x.jpg 2x" alt="Мщрской пляж с черным песком">
+          <img class="form-connection__image" src="img/popup.jpg" srcset="img/popup.jpg 1x, img/popup@2x.jpg 2x" alt="Мщрской пляж с черным песком">
         </picture>
         <div class="form-connection__container">
+          <button class="form-connection__close"><span class="visually-hidden">Закрыть форму</span></button>
           <h2 class="form-connection__title">Купить тур</h2>
           <ul class="form-connection__list">
-            <li class="form-connection__item phone">
+            <li class="form-connection__item data">
+              <svg class="form-connection__icon" width="6" height="26">
+                <use xlink:href="img/sprite.svg#required"></use>
+              </svg>
               <label class="visually-hidden" for="phone">Телефон</label>
-              <input class="phone__input" type="tel" name="phone" id="phone" placeholder="+7 Введите 10 цифр номера" required>
+              <input class="data__input data__input--phone" type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" required>
             </li>
-            <li class="form-connection__item email">
+            <li class="form-connection__item data">
               <label class="visually-hidden" for="e-mail">E-mail</label>
-                <input class="email__input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+                <input class="data__input data__input--email" type="email" name="e-mail" id="e-mail" placeholder="E-mail">
             </li>
           </ul>
           <button class="form-connection__button button" type="submit" aria-label="Отправить данные">отправить</button>
@@ -424,8 +428,11 @@
       </form>
     </section>
 
-    <div class="popup-success">
-      <p class="popup-success__message">Форма успешно отправлена, спасибо! :)</p>
+    <div class="modal modal--success" id="success">
+      <div class="modal__form popup-success">
+        <button class="popup-success__close"><span class="visually-hidden">Закрыть форму</span></button>
+        <p class="popup-success__message">Форма успешно отправлена, спасибо! :)</p>
+      </div>
     </div>
 
     <script src="js/script.min.js"></script>
