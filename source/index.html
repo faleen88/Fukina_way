@@ -344,6 +344,32 @@
           </ul>
         </div>
       </section>
+
+      <section class="form-section">
+        <div class="form-section__container">
+          <form class="form-section__form form" method="POST" action="https://echo.htmlacademy.ru">
+            <div class="form__container">
+              <h2 class="form__title">У Вас остались вопросы?</h2>
+              <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+              <ul class="form__list">
+                <li class="form__item data">
+                  <svg class="data__icon" width="6" height="26">
+                    <use xlink:href="img/sprite.svg#required"></use>
+                  </svg>
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input class="data__input data__input--phone" type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" required>
+                </li>
+                <li class="form__item data">
+                  <label class="visually-hidden" for="e-mail">E-mail</label>
+                    <input class="data__input data__input--email" type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+                </li>
+              </ul>
+              <button class="form__button button" type="submit" aria-label="Отправить данные">отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
     </main>
 
     <footer class="main-footer container">
@@ -412,7 +438,7 @@
           <h2 class="form-connection__title">Купить тур</h2>
           <ul class="form-connection__list">
             <li class="form-connection__item data">
-              <svg class="form-connection__icon" width="6" height="26">
+              <svg class="data__icon" width="6" height="26">
                 <use xlink:href="img/sprite.svg#required"></use>
               </svg>
               <label class="visually-hidden" for="phone">Телефон</label>

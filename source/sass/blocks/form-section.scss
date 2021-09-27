@@ -1,0 +1,22 @@
+.form-section {
+  margin-bottom: 160px;
+}
+
+.form-section__container {
+  width: 1170px;
+  min-height: 455px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.form-section__form {
+  padding: 70px 0 70px 514px;
+  background-image: url("../img/form-desctop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
