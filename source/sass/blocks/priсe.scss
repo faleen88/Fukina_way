@@ -1,0 +1,96 @@
+.priсe {
+  margin-bottom: 140px;
+}
+
+.priсe__container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 94px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.price__description {
+  padding: 111px 0 95px;
+  grid-column: 2 / 3;
+}
+
+.price__title {
+  margin: 0;
+  padding-bottom: 19px;
+  margin-bottom: 33px;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $accent;
+  }
+}
+
+.price__text {
+  margin-bottom: 61px;
+  line-height: 27px;
+}
+
+.price__contacts {
+  padding-right: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price__contacts-text {
+  margin-bottom: 13px;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.price__link {
+  padding-right: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $black;
+  position: relative;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.price__icon {
+  position: absolute;
+  top: 0;
+  left: -51px;
+  fill: none;
+  stroke: $accent;
+}
+
+.price__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
