@@ -25,6 +25,10 @@ navToggle.addEventListener('click', () => {
 
 const getTabHandler = (evt) => {
   evt.preventDefault();
+  if (evt.target.tagName !== 'A') {
+    return;
+  }
+
   tabsNav.querySelectorAll('.tabs__link').forEach((item) => item.classList.remove('tabs__link--active'));
   tabs.querySelectorAll('.tab').forEach((tab) => {
     tab.classList.add('tab--hidden');

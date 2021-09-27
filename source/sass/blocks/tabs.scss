@@ -1,11 +1,25 @@
 .tabs {
   margin-bottom: 234px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .tabs__container {
   width: 1170px;
   margin: 0 auto;
   padding: 0 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .tabs__nav {
@@ -16,6 +30,17 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+    margin-bottom: 23px;
+  }
 }
 
 .tabs__nav-item {
@@ -63,5 +88,9 @@
     height: 1089px;
     background-image: url("../img/map.svg");
     z-index: -1;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }

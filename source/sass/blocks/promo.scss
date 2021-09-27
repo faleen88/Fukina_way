@@ -2,14 +2,14 @@
   min-height: 860px;
   margin-bottom: 200px;
   background-color: $background;
-  background-position: 50%;
-  background-size: cover;
   background-image: url("../img/promo-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-desktop@2x.jpg");
-    background-size: 1920px auto;
+    background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
@@ -20,7 +20,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-tablet@2x.jpg");
-      background-size: 768px auto;
     }
   }
 
@@ -69,16 +68,16 @@
     min-height: 235px;
     margin-bottom: 21px;
     background-color: $background;
-    background-position: 50%;
-    background-size: cover;
     background-image: url("../img/promo-mobile.jpg");
     background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
     font-size: 24px;
     line-height: 36px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-mobile@2x.jpg");
-      background-size: 320px auto;
+      background-size: cover;
     }
   }
 }

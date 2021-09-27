@@ -4,6 +4,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 55px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__container {
@@ -154,6 +158,10 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:not(:nth-child(2n)) {
       margin-right: 0;
