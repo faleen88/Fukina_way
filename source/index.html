@@ -9,39 +9,41 @@
   <body class="page__body">
 
     <header class="main-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs container">
-        <div class="main-nav__logo">
-          <picture>
-            <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo.svg" alt="Логотип туроператора">
-          </picture>
-        </div>
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#catalog">
-              О путешествии
-              <svg class="site-nav__icon" width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#price">
-              Цены
-              <svg class="site-nav__icon" width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="main-nav__contacts" href="tel:+749978468446" aria-label="Телефон для связи +7 (499) -784-684-46">
-          <svg class="main-nav__icon" width="30" height="30">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>
-          +7 (499) -784-684-46
-        </a>
-      </nav>
+      <div class="main-header__container">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__logo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo.svg" alt="Логотип туроператора">
+            </picture>
+          </div>
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#catalog">
+                О путешествии
+                <svg class="site-nav__icon" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#price">
+                Цены
+                <svg class="site-nav__icon" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="main-nav__contacts" href="tel:+749978468446" aria-label="Телефон для связи +7 (499) -784-684-46">
+            <svg class="main-nav__icon" width="30" height="30">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">

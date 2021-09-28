@@ -86,6 +86,7 @@
       width: 50px;
       height: 50px;
       background-image: url("../img/close.svg");
+      z-index: 2;
     }
   }
 }
@@ -107,6 +108,17 @@
 
   .main-nav--nojs .main-nav__list {
     display: block;
+    width: 100%;
+    padding: 84px 0 54px;
+  }
+
+  .main-nav--yesjs .main-nav__list {
+    width: 320px;
+    padding: 134px 0 234px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
   }
 }
 

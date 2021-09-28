@@ -13,6 +13,7 @@ const modalSuccess = document.querySelector('#success');
 const modalSuccessCloseButton = modalSuccess.querySelector('.popup-success__close');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.add('main-nav--yesjs');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {
