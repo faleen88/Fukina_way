@@ -1,7 +1,19 @@
 .form {
   background-image: url("../img/form-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 844px 455px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 844px;
+    height: 455px;
+    top: 0;
+    left: 0;
+    background-color: $accent;
+    z-index: -1;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/form-desktop@2x.jpg");
@@ -12,6 +24,10 @@
     background-image: url("../img/form-tablet.jpg");
     background-size: cover;
 
+    &::before {
+      width: 100%;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/form-tablet@2x.jpg");
       background-size: cover;
@@ -20,6 +36,10 @@
 
   @media (max-width: $mobile-width) {
     background-image: none;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

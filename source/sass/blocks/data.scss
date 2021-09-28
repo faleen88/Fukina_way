@@ -39,4 +39,12 @@
       width: 256px;
     }
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus:invalid {
+    border: 1px solid $accent;
+  }
 }

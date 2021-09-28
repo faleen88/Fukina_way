@@ -75,7 +75,9 @@
   }
 }
 
-.tab__button {
+.tab__link {
+  display: inline-flex;
+  align-items: center;
   width: 250px;
   min-height: 75px;
 
@@ -88,6 +90,11 @@
     width: 288px;
     margin-bottom: 50px;
   }
+}
+
+.tab__link-text {
+  display: block;
+  margin: 0 auto;
 }
 
 .tab__image {

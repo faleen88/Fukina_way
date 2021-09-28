@@ -4,7 +4,7 @@ const tabsSection = document.querySelector('.tabs');
 const tabsNav = tabsSection.querySelector('.tabs__nav');
 const tabsNavLincs = tabsNav.querySelectorAll('.tabs__link');
 const tabs = tabsSection.querySelectorAll('.tab');
-const buttonsOpenPopap = document.querySelectorAll('.tab__button, .item-price__button');
+const buttonsOpenPopap = document.querySelectorAll('.tab__link, .item-price__link');
 const buttonsLink = document.querySelectorAll('.catalog__link');
 const modalConnection = document.querySelector('#connection');
 const modalConnectionCloseButton = modalConnection.querySelector('.form-connection__close');
@@ -44,8 +44,7 @@ const offset = (el) => {
 
 const getCurrentTabHandler = (evt) => {
   evt.preventDefault();
-
-  if (evt.target.tagName !== 'A') {
+  if (evt.target.tagName === 'A') {
     return;
   }
 

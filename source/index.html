@@ -68,43 +68,53 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet.webp 1x, img/greece-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/greece-desktop.webp 1x, img/greece-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/greece-tablet.jpg 1x, img/greece-tablet@2x.jpg 2x">
                 <img src="img/greece-desktop.jpg" srcset="img/greece-desktop.jpg 1x, img/greece-desktop@2x.jpg 2x" alt="Дом на скале">
               </picture>
               <h3 class="catalog__item-title">Греция</h3>
-              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
+              <a class="catalog__link" href="#tabs"><span class="catalog__link-text" data-way="greece">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet.webp 1x, img/albania-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/albania-desktop.webp 1x, img/albania-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/albania-tablet.jpg 1x, img/albania-tablet@2x.jpg 2x">
                 <img src="img/albania-desktop.jpg" srcset="img/albania-desktop.jpg 1x, img/albania-desktop@2x.jpg 2x" alt="Вид пляжа сверху">
               </picture>
               <h3 class="catalog__item-title">Албания</h3>
-              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
+              <a class="catalog__link" href="#tabs"><span class="catalog__link-text" data-way="albania">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/macedonia-tablet.webp 1x, img/macedonia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/macedonia-desktop.webp 1x, img/macedonia-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/macedonia-tablet.jpg 1x, img/macedonia-tablet@2x.jpg 2x">
                 <img src="img/macedonia-desktop.jpg" srcset="img/macedonia-desktop.jpg 1x, img/macedonia-desktop@2x.jpg 2x" alt="Здание церкви на фоне моря">
               </picture>
               <h3 class="catalog__item-title">Македония</h3>
-              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
+              <a class="catalog__link" href="#tabs"><span class="catalog__link-text" data-way="macedonia">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet.webp 1x, img/montenegro-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/montenegro-desktop.webp 1x, img/montenegro-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/montenegro-tablet.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
-                <img src="img/montenegro-desktop.jpg" srcset="img/montenegro-desktop.jpg 1x, img/montenegro-desktop@2x.jpg 2x" alt="Прозрачно-голубая река срефди леса. Вид свурху">
+                <img src="img/montenegro-desktop.jpg" srcset="img/montenegro-desktop.jpg 1x, img/montenegro-desktop@2x.jpg 2x" alt="Прозрачно-голубая река среди леса. Вид свурху">
               </picture>
               <h3 class="catalog__item-title">Черногория</h3>
-              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
+              <a class="catalog__link" href="#tabs"><span class="catalog__link-text" data-way="montenegro">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet.webp 1x, img/croatia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/croatia-desktop.webp 1x, img/croatia-desktop@2x.webp 2x">
                 <source media="(max-width: 1023px)" srcset="img/croatia-tablet.jpg 1x, img/croatia-tablet@2x.jpg 2x">
                 <img src="img/croatia-desktop.jpg" srcset="img/croatia-desktop.jpg 1x, img/croatia-desktop@2x.jpg 2x" alt="Водоем в подземной пещере">
               </picture>
               <h3 class="catalog__item-title">Хорватия</h3>
-              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
+              <a class="catalog__link" href="#tabs"><span class="catalog__link-text" data-way="croatia">смотреть подробнее</span></a>
             </li>
           </ul>
         </div>
@@ -124,9 +134,12 @@
               <div class="tab__description">
                 <h2 class="tab__title">Греция</h2>
                 <p class="tab__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                <button class="tab__button button">купить тур сейчас</button>
+                <a class="tab__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
               </div>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/greece-tab-mobile.webp 1x, img/greece-tab-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tab-tablet.webp 1x, img/greece-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/greece-tab-desktop.webp 1x, img/greece-tab-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/greece-tab-mobile.jpg 1x, img/greece-tab-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/greece-tab-tablet.jpg 1x, img/greece-tab-tablet@2x.jpg 2x">
                 <img class="tab__image" src="img/greece-tab-desktop.jpg" srcset="img/greece-tab-desktop.jpg 1x, img/greece-tab-desktop@2x.jpg 2x" alt="Дом на скале">
@@ -136,6 +149,7 @@
                 <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                 <div class="review__autor">
                   <picture>
+                    <source type="image/webp" srcset="img/avatar-1.webp 1x, img/avatar-1@2x.webp 2x">
                     <img class="review__avatar" src="img/avatar-1.jpg" srcset="img/avatar-1.jpg 1x, img/avatar-1@2x.jpg 2x" alt="Девушка с темными волосами до середины шеи">
                   </picture>
                   <span class="review__autor-name">Влада Голицина</span>
@@ -146,9 +160,12 @@
               <div class="tab__description">
                 <h2 class="tab__title">Албания</h2>
                 <p class="tab__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
-                <button class="tab__button button">купить тур сейчас</button>
+                <a class="tab__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
               </div>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/albania-tab-mobile.webp 1x, img/albania-tab-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tab-tablet.webp 1x, img/albania-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/albania-tab-desktop.webp 1x, img/albania-tab-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/albania-tab-mobile.jpg 1x, img/albania-tab-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/albania-tab-tablet.jpg 1x, img/albania-tab-tablet@2x.jpg 2x">
                 <img class="tab__image" src="img/albania-tab-desktop.jpg" srcset="img/albania-tab-desktop.jpg 1x, img/albania-tab-desktop@2x.jpg 2x" alt="Вид пляжа сверху">
@@ -158,6 +175,7 @@
                 <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                 <div class="review__autor autor">
                   <picture>
+                    <source type="image/webp" srcset="img/avatar-2.webp 1x, img/avatar-2@2x.webp 2x">
                     <img class="autor__avatar" src="img/avatar-2.jpg" srcset="img/avatar-2.jpg 1x, img/avatar-2@2x.jpg 2x" alt="Девушка в шляпе с длинными вьющимися волосами">
                   </picture>
                   <b class="autor__name">Маришка</b>
@@ -168,9 +186,12 @@
               <div class="tab__description">
                 <h2 class="tab__title">Македония</h2>
                 <p class="tab__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
-                <button class="tab__button button">купить тур сейчас</button>
+                <a class="tab__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
               </div>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/macedonia-tab-mobile.webp 1x, img/macedonia-tab-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/macedonia-tab-tablet.webp 1x, img/macedonia-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/macedonia-tab-desktop.webp 1x, img/macedonia-tab-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/macedonia-tab-mobile.jpg 1x, img/macedonia-tab-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/macedonia-tab-tablet.jpg 1x, img/macedonia-tab-tablet@2x.jpg 2x">
                 <img class="tab__image" src="img/macedonia-tab-desktop.jpg" srcset="img/macedonia-tab-desktop.jpg 1x, img/macedonia-tab-desktop@2x.jpg 2x" alt="Здание церкви на фоне моря">
@@ -180,6 +201,7 @@
                 <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                 <div class="review__autor autor">
                   <picture>
+                    <source type="image/webp" srcset="img/avatar-3.webp 1x, img/avatar-3@2x.webp 2x">
                     <img class="autor__avatar" src="img/avatar-3.jpg" srcset="img/avatar-3.jpg 1x, img/avatar-3@2x.jpg 2x" alt="Молодой парень в синей рубашке">
                   </picture>
                   <b class="autor__name">Михаил Кузьмин</b>
@@ -190,18 +212,22 @@
               <div class="tab__description">
                 <h2 class="tab__title">Черногория</h2>
                 <p class="tab__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
-                <button class="tab__button button">купить тур сейчас</button>
+                <a class="tab__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
               </div>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/montenegro-tab-mobile.webp 1x, img/montenegro-tab-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tab-tablet.webp 1x, img/montenegro-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/montenegro-tab-desktop.webp 1x, img/montenegro-tab-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/montenegro-tab-mobile.jpg 1x, img/montenegro-tab-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/montenegro-tab-tablet.jpg 1x, img/montenegro-tab-tablet@2x.jpg 2x">
-                <img class="tab__image" src="img/montenegro-tab-desktop.jpg" srcset="img/montenegro-tab-desktop.jpg 1x, img/montenegro-tab-desktop@2x.jpg 2x" alt="Прозрачно-голубая река срефди леса. Вид свурху">
+                <img class="tab__image" src="img/montenegro-tab-desktop.jpg" srcset="img/montenegro-tab-desktop.jpg 1x, img/montenegro-tab-desktop@2x.jpg 2x" alt="Прозрачно-голубая река среди леса. Вид свурху">
               </picture>
               <div class="tab__review review">
                 <h2 class="review_title">Отзывы</h2>
                 <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
                 <div class="review__autor autor">
                   <picture>
+                    <source type="image/webp" srcset="img/avatar-4.webp 1x, img/avatar-4@2x.webp 2x">
                     <img class="autor__avatar" src="img/avatar-4.jpg" srcset="img/avatar-4.jpg 1x, img/avatar-4@2x.jpg 2x" alt="Девушка, сидящая на камнях на берегу моря">
                   </picture>
                   <b class="autor__name">Анастасия Мей</b>
@@ -212,9 +238,12 @@
               <div class="tab__description">
                 <h2 class="tab__title">Хорватия</h2>
                 <p class="tab__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
-                <button class="tab__button button">купить тур сейчас</button>
+                <a class="tab__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
               </div>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/croatia-tab-mobile.webp 1x, img/croatia-tab-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tab-tablet.webp 1x, img/croatia-tab-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/croatia-tab-desktop.webp 1x, img/croatia-tab-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/croatia-tab-mobile.jpg 1x, img/croatia-tab-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/croatia-tab-tablet.jpg 1x, img/croatia-tab-tablet@2x.jpg 2x">
                 <img class="tab__image" src="img/croatia-tab-desktop.jpg" srcset="img/croatia-tab-desktop.jpg 1x, img/croatia-tab-desktop@2x.jpg 2x" alt="Водоем в подземной пещере">
@@ -224,6 +253,7 @@
                 <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
                 <div class="review__autor autor">
                   <picture>
+                    <source type="image/webp" srcset="img/avatar-5.webp 1x, img/avatar-5@2x.webp 2x">
                     <img class="autor__avatar" src="img/avatar-5.jpg" srcset="img/avatar-5.jpg 1x, img/avatar-5@2x.jpg 2x" alt="Мужчина в солнцезащитных очках">
                   </picture>
                   <b class="autor__name">Владимир Мулицин</b>
@@ -284,7 +314,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="item-price__button button">купить тур сейчас</button>
+              <a class="item-price__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
             </li>
             <li class="price__item item-price">
               <div class="item-price__container">
@@ -325,7 +355,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="item-price__button button">купить тур сейчас</button>
+              <a class="item-price__link button" href="modal.html"><span class="tab__link-text">купить тур сейчас</span></a>
             </li>
           </ul>
         </div>
@@ -343,7 +373,7 @@
                     <use xlink:href="img/sprite.svg#required"></use>
                   </svg>
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="data__input data__input--phone" type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" required>
+                  <input class="data__input data__input--phone" type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
                 </li>
                 <li class="form__item data">
                   <label class="visually-hidden" for="e-mail">E-mail</label>
@@ -419,7 +449,8 @@
     <section class="modal modal--connection" id="connection">
       <form class="modal__form form-connection" method="GET" action="https://echo.htmlacademy.ru">
         <picture>
-          <img class="form-connection__image" src="img/popup.jpg" srcset="img/popup.jpg 1x, img/popup@2x.jpg 2x" alt="Мщрской пляж с черным песком">
+          <source type="image/webp" srcset="img/popup.webp 1x, img/popup@2x.webp 2x">
+          <img class="form-connection__image" src="img/popup.jpg" srcset="img/popup.jpg 1x, img/popup@2x.jpg 2x" alt="Морской пляж с черным песком">
         </picture>
         <div class="form-connection__container">
           <button class="form-connection__close"><span class="visually-hidden">Закрыть форму</span></button>
@@ -430,7 +461,7 @@
                 <use xlink:href="img/sprite.svg#required"></use>
               </svg>
               <label class="visually-hidden" for="phone-connection">Телефон</label>
-              <input class="data__input data__input--phone" type="tel" name="phone" id="phone-connection" placeholder="+7  Введите 10 цифр номера" required>
+              <input class="data__input data__input--phone" type="tel" name="phone" id="phone-connection" placeholder="+7  Введите 10 цифр номера" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
             </li>
             <li class="form-connection__item data">
               <label class="visually-hidden" for="e-mail-connection">E-mail</label>

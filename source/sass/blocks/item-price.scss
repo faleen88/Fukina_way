@@ -48,7 +48,7 @@
       width: 282px;
       padding: 0;
 
-      .item-price__button {
+      .item-price__link {
         margin-bottom: -3px;
         margin-left: -3px;
       }
@@ -155,7 +155,9 @@
   left: -32px;
 }
 
-.item-price__button {
+.item-price__link {
+  display: inline-flex;
+  align-items: center;
   width: 310px;
   min-height: 75px;
 
