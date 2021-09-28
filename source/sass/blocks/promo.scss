@@ -1,5 +1,5 @@
 .promo {
-  min-height: 860px;
+  height: 860px;
   margin-bottom: 200px;
   background-color: $background;
   background-image: url("../img/promo-desktop.jpg");
@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 344px;
+    height: 344px;
     margin-bottom: 80px;
     text-align: center;
     background-image: url("../img/promo-tablet.jpg");
@@ -24,6 +24,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    min-height: 433px;
     margin-bottom: 81px;
     background-image: none;
     background-color: $white;
@@ -32,9 +33,9 @@
 }
 
 .promo__container {
-  width: 379px;
+  width: 412px;
+  padding: 185px 65px 0 710px;
   margin: 0 auto;
-  padding: 185px 0 0 610px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -65,7 +66,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 235px;
+    height: 235px;
     margin-bottom: 21px;
     background-color: $background;
     background-image: url("../img/promo-mobile.jpg");
@@ -77,7 +78,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-mobile@2x.jpg");
-      background-size: cover;
     }
   }
 }
@@ -92,9 +92,10 @@
 .promo__text {
   margin: 0;
   margin-bottom: 35px;
+  padding-right: 36px;
   color: $white;
   line-height: 27px;
-  letter-spacing: 0;
+  letter-spacing: -0.03em;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 11px;
