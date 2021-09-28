@@ -60,6 +60,7 @@
 .form-connection__button {
   width: 176px;
   height: 50px;
+  cursor: pointer;
 
   @media (max-width: $mobile-width) {
     width: 288px;

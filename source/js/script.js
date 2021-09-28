@@ -8,12 +8,21 @@ const buttonsOpenPopap = document.querySelectorAll('.tab__button, .item-price__b
 const buttonsLink = document.querySelectorAll('.catalog__link');
 const modalConnection = document.querySelector('#connection');
 const modalConnectionCloseButton = modalConnection.querySelector('.form-connection__close');
-const modalConnectionSubmitButton = modalConnection.querySelector('.form-connection__button');
 const modalSuccess = document.querySelector('#success');
 const modalSuccessCloseButton = modalSuccess.querySelector('.popup-success__close');
 
+const formConnection = modalConnection.querySelector('.form-connection');
+const phoneInput = modalConnection.querySelector('.data__input--phone');
+const emailInput = modalConnection.querySelector('.data__input--email');
+
+const form = document.querySelector('.form');
+const formPhoneInput = form.querySelector('.data__input--phone');
+const formEmailInput = form.querySelector('.data__input--email');
+
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.add('main-nav--yesjs');
+
+// Меню
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -24,6 +33,8 @@ navToggle.addEventListener('click', () => {
     navMain.classList.add('main-nav--closed');
   }
 });
+
+// Каталог
 
 const offset = (el) => {
   var rect = el.getBoundingClientRect(),
@@ -57,6 +68,8 @@ const getCurrentTabHandler = (evt) => {
 
 }
 
+// Табы
+
 const getTabHandler = (evt) => {
   evt.preventDefault();
   if (evt.target.tagName !== 'A') {
@@ -80,6 +93,8 @@ buttonsLink.forEach((button) => {
 });
 
 tabsNav.addEventListener('click', getTabHandler);
+
+// Формы
 
 const closePopupConnection = () => {
   modalConnection.classList.remove('modal-show');
@@ -128,35 +143,64 @@ const closeEscKeydownSuccessHandler = (evt) => {
   }
 }
 
-const closeOverlayConnectionHandler = (evt) => {
-  evt.preventDefault();
-  window.addEventListener('click', closePopupConnectionHandler);
-  window.removeEventListener('click', closeOverlayConnectionHandler);
+let isStorageSupport = true;
+let storagePhone = '';
+let storageEmail = '';
+
+try {
+  storagePhone = localStorage.getItem('phone');
+  storageEmail = localStorage.getItem('email');
+} catch (err) {
+  isStorageSupport = false;
 }
 
-const closeOverlaySuccessHandler = (evt) => {
+const openPopupHandler = (evt) => {
   evt.preventDefault();
-  window.addEventListener('click', closePopupSuccessHandler);
-  window.removeEventListener('click', closeOverlaySuccessHandler);
-}
-
-const submitDataHandler = (evt) => {
-  evt.preventDefault();
-  modalSuccess.classList.add('modal-show');
-  modalSuccessCloseButton.addEventListener('click', closePopupSuccessHandler);
-  document.addEventListener('keydown', closeEscKeydownSuccessHandler);
-  window.addEventListener('click', closeOverlaySuccessHandler);
-  closePopupConnection();
-}
-
-const openPopupHandler = () => {
   modalConnection.classList.add('modal-show');
+
+  if (storagePhone) {
+    phoneInput.value = storagePhone;
+    emailInput.focus();
+    if (storageEmail) {
+      emailInput.value = storageEmail;
+      phoneInput.focus();
+    }
+  } else {
+    phoneInput.focus();
+  }
+
   modalConnectionCloseButton.addEventListener('click', closePopupConnectionHandler);
-  modalConnectionSubmitButton.addEventListener('click', submitDataHandler);
   document.addEventListener('keydown', closeEscKeydownConnectionHandler);
-  window.addEventListener('click', closeOverlayConnectionHandler);
 }
 
 buttonsOpenPopap.forEach((button) => {
   button.addEventListener('click', openPopupHandler);
 });
+
+formConnection.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+
+  if (!phoneInput.value) {
+    evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('phone', phoneInput.value);
+      localStorage.setItem('email', emailInput.value);
+    }
+  }
+
+  modalSuccess.classList.add('modal-show');
+  modalSuccessCloseButton.addEventListener('click', closePopupSuccessHandler);
+  document.addEventListener('keydown', closeEscKeydownSuccessHandler);
+  closePopupConnection();
+})
+
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+
+  modalSuccess.classList.add('modal-show');
+  modalSuccessCloseButton.addEventListener('click', closePopupSuccessHandler);
+  document.addEventListener('keydown', closeEscKeydownSuccessHandler);
+  formPhoneInput.value = '';
+  formEmailInput.value = '';
+})

@@ -35,10 +35,11 @@
   font-weight: 600;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 22px;
     text-align: center;
   }
 }
