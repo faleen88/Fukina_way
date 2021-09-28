@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Way</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -56,9 +57,7 @@
             <span class="promo__title-text">Путешествие по Европе</span>
           </h2>
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <button class="promo__button button">
-            <a class="promo__link" href="#tabs">смотреть тур</a>
-          </button>
+          <a class="promo__link button" href="#tabs"><span class="promo__link-text">смотреть тур</span></a>
         </div>
       </section>
 
@@ -73,9 +72,7 @@
                 <img src="img/greece-desktop.jpg" srcset="img/greece-desktop.jpg 1x, img/greece-desktop@2x.jpg 2x" alt="Дом на скале">
               </picture>
               <h3 class="catalog__item-title">Греция</h3>
-              <button class="catalog__button">
-                <a class="catalog__link" href="#tabs" data-way="greece">смотреть подробнее</a>
-              </button>
+              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
@@ -83,9 +80,7 @@
                 <img src="img/albania-desktop.jpg" srcset="img/albania-desktop.jpg 1x, img/albania-desktop@2x.jpg 2x" alt="Вид пляжа сверху">
               </picture>
               <h3 class="catalog__item-title">Албания</h3>
-              <button class="catalog__button">
-                <a class="catalog__link" href="#tabs" data-way="albania">смотреть подробнее</a>
-              </button>
+              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
@@ -93,9 +88,7 @@
                 <img src="img/macedonia-desktop.jpg" srcset="img/macedonia-desktop.jpg 1x, img/macedonia-desktop@2x.jpg 2x" alt="Здание церкви на фоне моря">
               </picture>
               <h3 class="catalog__item-title">Македония</h3>
-              <button class="catalog__button">
-                <a class="catalog__link" href="#tabs" data-way="macedonia">смотреть подробнее</a>
-              </button>
+              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
@@ -103,9 +96,7 @@
                 <img src="img/montenegro-desktop.jpg" srcset="img/montenegro-desktop.jpg 1x, img/montenegro-desktop@2x.jpg 2x" alt="Прозрачно-голубая река срефди леса. Вид свурху">
               </picture>
               <h3 class="catalog__item-title">Черногория</h3>
-              <button class="catalog__button">
-                <a class="catalog__link" href="#tabs" data-way="montenegro">смотреть подробнее</a>
-              </button>
+              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
             </li>
             <li class="catalog__item">
               <picture>
@@ -113,9 +104,7 @@
                 <img src="img/croatia-desktop.jpg" srcset="img/croatia-desktop.jpg 1x, img/croatia-desktop@2x.jpg 2x" alt="Водоем в подземной пещере">
               </picture>
               <h3 class="catalog__item-title">Хорватия</h3>
-              <button class="catalog__button">
-                <a class="catalog__link" href="#tabs" data-way="croatia">смотреть подробнее</a>
-              </button>
+              <a class="catalog__link" href="#tabs" data-way="croatia"><span class="catalog__link-text">смотреть подробнее</span></a>
             </li>
           </ul>
         </div>
@@ -374,27 +363,27 @@
         <section class="main-footer__item future-ways">
           <h2 class="future-ways__title">Следующие путешествия</h2>
           <ul class="future-ways__list">
-            <div class="future-ways__list-column">
-              <li class="future-ways__item">Марсель</li>
-              <li class="future-ways__item">Ним</li>
-              <li class="future-ways__item">Монпелье</li>
-              <li class="future-ways__item">Барселона</li>
-              <li class="future-ways__item">Пальма</li>
-            </div>
-            <div class="future-ways__list-column">
-              <li class="future-ways__item">Сардиния</li>
-              <li class="future-ways__item">Палермо</li>
-              <li class="future-ways__item">Катания</li>
-              <li class="future-ways__item">Неаполь</li>
-              <li class="future-ways__item">Рим</li>
-            </div>
-            <div class="future-ways__list-column">
-              <li class="future-ways__item">Корс</li>
-              <li class="future-ways__item">Ницца</li>
-              <li class="future-ways__item">Монако</li>
-              <li class="future-ways__item">Динь-ле-Бен</li>
-              <li class="future-ways__item">Гренобль</li>
-            </div>
+            <li class="future-ways__list-column">
+              <span class="future-ways__item">Марсель</span>
+              <span class="future-ways__item">Ним</span>
+              <span class="future-ways__item">Монпелье</span>
+              <span class="future-ways__item">Барселона</span>
+              <span class="future-ways__item">Пальма</span>
+            </li>
+            <li class="future-ways__list-column">
+              <span class="future-ways__item">Сардиния</span>
+              <span class="future-ways__item">Палермо</span>
+              <span class="future-ways__item">Катания</span>
+              <span class="future-ways__item">Неаполь</span>
+              <span class="future-ways__item">Рим</span>
+            </li>
+            <li class="future-ways__list-column">
+              <span class="future-ways__item">Корс</span>
+              <span class="future-ways__item">Ницца</span>
+              <span class="future-ways__item">Монако</span>
+              <span class="future-ways__item">Динь-ле-Бен</span>
+              <span class="future-ways__item">Гренобль</span>
+            </li>
           </ul>
         </section>
 
@@ -440,12 +429,12 @@
               <svg class="data__icon" width="6" height="26">
                 <use xlink:href="img/sprite.svg#required"></use>
               </svg>
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input class="data__input data__input--phone" type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" required>
+              <label class="visually-hidden" for="phone-connection">Телефон</label>
+              <input class="data__input data__input--phone" type="tel" name="phone" id="phone-connection" placeholder="+7  Введите 10 цифр номера" required>
             </li>
             <li class="form-connection__item data">
-              <label class="visually-hidden" for="e-mail">E-mail</label>
-                <input class="data__input data__input--email" type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+              <label class="visually-hidden" for="e-mail-connection">E-mail</label>
+                <input class="data__input data__input--email" type="email" name="e-mail" id="e-mail-connection" placeholder="E-mail">
             </li>
           </ul>
           <button class="form-connection__button button" type="submit" aria-label="Отправить данные">отправить</button>

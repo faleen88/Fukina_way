@@ -115,7 +115,7 @@
   }
 
   &:hover {
-    .catalog__button {
+    .catalog__link {
       display: block;
     }
 
@@ -141,12 +141,6 @@
     &:last-child {
       margin-left: 0;
       margin-right: 0;
-    }
-
-    &:hover {
-      .catalog__background {
-        height: 425px;
-      }
     }
   }
 
@@ -181,7 +175,7 @@
   }
 }
 
-.catalog__button {
+.catalog__link {
   display: none;
   width: 266px;
   min-height: 77px;
@@ -192,9 +186,13 @@
   z-index: 2;
   background-color: transparent;
   border: 1px solid $white;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.catalog__link {
+.catalog__link-text {
+  display: inline-block;
   padding: 30px 15px;
   color: $white;
   font-family: $fontFamily;
@@ -203,5 +201,4 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  cursor: pointer;
 }

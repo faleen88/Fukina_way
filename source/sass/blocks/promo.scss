@@ -109,12 +109,12 @@
   }
 }
 
-.promo__button {
+.promo__link {
   width: 340px;
   min-height: 75px;
   position: relative;
-  text-align: left;
-  padding-left: 40px;
+  display: inline-flex;
+  align-items: center;
 
   &::after {
     content: "";
@@ -136,6 +136,6 @@
   }
 }
 
-.promo__link {
-  color: $white;
+.promo__link-text {
+  padding-left: 40px;
 }
