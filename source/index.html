@@ -19,7 +19,7 @@
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
+            <a class="site-nav__link" href="#catalog">
               О путешествии
               <svg class="site-nav__icon" width="25" height="25">
                 <use xlink:href="img/sprite.svg#arrow"></use>
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">
+            <a class="site-nav__link" href="#price">
               Цены
               <svg class="site-nav__icon" width="25" height="25">
                 <use xlink:href="img/sprite.svg#arrow"></use>
@@ -55,12 +55,12 @@
           </h2>
           <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
           <button class="promo__button button">
-            <a class="promo__link" href="#">смотреть тур</a>
+            <a class="promo__link" href="#tabs">смотреть тур</a>
           </button>
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog__container">
           <h2 class="catalog__title">Места посещения</h2>
           <p class="catalog__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
@@ -73,7 +73,7 @@
               </picture>
               <h3 class="catalog__item-title">Греция</h3>
               <button class="catalog__button">
-                <a class="catalog__link" href="#">смотреть подробнее</a>
+                <a class="catalog__link" href="#tabs" data-way="greece">смотреть подробнее</a>
               </button>
             </li>
             <li class="catalog__item">
@@ -84,7 +84,7 @@
               </picture>
               <h3 class="catalog__item-title">Албания</h3>
               <button class="catalog__button">
-                <a class="catalog__link" href="#">смотреть подробнее</a>
+                <a class="catalog__link" href="#tabs" data-way="albania">смотреть подробнее</a>
               </button>
             </li>
             <li class="catalog__item">
@@ -95,7 +95,7 @@
               </picture>
               <h3 class="catalog__item-title">Македония</h3>
               <button class="catalog__button">
-                <a class="catalog__link" href="#">смотреть подробнее</a>
+                <a class="catalog__link" href="#tabs" data-way="macedonia">смотреть подробнее</a>
               </button>
             </li>
             <li class="catalog__item">
@@ -106,7 +106,7 @@
               </picture>
               <h3 class="catalog__item-title">Черногория</h3>
               <button class="catalog__button">
-                <a class="catalog__link" href="#">смотреть подробнее</a>
+                <a class="catalog__link" href="#tabs" data-way="montenegro">смотреть подробнее</a>
               </button>
             </li>
             <li class="catalog__item">
@@ -117,14 +117,14 @@
               </picture>
               <h3 class="catalog__item-title">Хорватия</h3>
               <button class="catalog__button">
-                <a class="catalog__link" href="#">смотреть подробнее</a>
+                <a class="catalog__link" href="#tabs" data-way="croatia">смотреть подробнее</a>
               </button>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="tabs">
+      <section class="tabs" id="tabs">
         <div class="tabs__container">
           <ul class="tabs__nav">
             <li class="tabs__nav-item"><a class="tabs__link tabs__link--active" href="#greece" data-way="greece">Греция</a></li>
@@ -134,7 +134,7 @@
             <li class="tabs__nav-item"><a class="tabs__link" href="#croatia" data-way="croatia">Хорватия</a></li>
           </ul>
           <ul class="tabs__list">
-            <li class="tabs__item tab" id="#greece">
+            <li class="tabs__item tab" id="greece">
               <div class="tab__description">
                 <h2 class="tab__title">Греция</h2>
                 <p class="tab__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
@@ -156,7 +156,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab tab--hidden" id="#albania">
+            <li class="tabs__item tab tab--hidden" id="albania">
               <div class="tab__description">
                 <h2 class="tab__title">Албания</h2>
                 <p class="tab__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
@@ -178,7 +178,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab tab--hidden" id="#macedonia">
+            <li class="tabs__item tab tab--hidden" id="macedonia">
               <div class="tab__description">
                 <h2 class="tab__title">Македония</h2>
                 <p class="tab__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -200,7 +200,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab tab--hidden" id="#montenegro">
+            <li class="tabs__item tab tab--hidden" id="montenegro">
               <div class="tab__description">
                 <h2 class="tab__title">Черногория</h2>
                 <p class="tab__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
@@ -222,7 +222,7 @@
                 </div>
               </div>
             </li>
-            <li class="tabs__item tab tab--hidden" id="#croatia">
+            <li class="tabs__item tab tab--hidden" id="croatia">
               <div class="tab__description">
                 <h2 class="tab__title">Хорватия</h2>
                 <p class="tab__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
@@ -248,7 +248,7 @@
         </div>
       </section>
 
-      <section class="priсe">
+      <section class="priсe" id="price">
         <div class="priсe__container">
           <div class="price__description">
             <h2 class="price__title">Цены</h2>

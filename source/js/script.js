@@ -1,8 +1,11 @@
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-const tabsNav = document.querySelector('.tabs__nav');
-const tabs = document.querySelector('.tabs__list');
-const buttons = document.querySelectorAll('.tab__button, .item-price__button');
+const tabsSection = document.querySelector('.tabs');
+const tabsNav = tabsSection.querySelector('.tabs__nav');
+const tabsNavLincs = tabsNav.querySelectorAll('.tabs__link');
+const tabs = tabsSection.querySelectorAll('.tab');
+const buttonsOpenPopap = document.querySelectorAll('.tab__button, .item-price__button');
+const buttonsLink = document.querySelectorAll('.catalog__link');
 const modalConnection = document.querySelector('#connection');
 const modalConnectionCloseButton = modalConnection.querySelector('.form-connection__close');
 const modalConnectionSubmitButton = modalConnection.querySelector('.form-connection__button');
@@ -21,6 +24,38 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+const offset = (el) => {
+  var rect = el.getBoundingClientRect(),
+  scrollTop = document.documentElement.scrollTop;
+  return { top: rect.top + scrollTop }
+}
+
+const getCurrentTabHandler = (evt) => {
+  evt.preventDefault();
+
+  if (evt.target.tagName !== 'A') {
+    return;
+  }
+
+  tabsNavLincs.forEach((item) => item.classList.remove('tabs__link--active'));
+  window.scrollTo(0, offset(tabsSection).top);
+
+  tabs.forEach((tab) => {
+    tab.classList.add('tab--hidden');
+
+    if (tab.id === evt.target.dataset.way) {
+      tab.classList.remove('tab--hidden');
+
+      tabsNavLincs.forEach((item) => {
+        if (item.dataset.way === evt.target.dataset.way) {
+          item.classList.add('tabs__link--active');
+        }
+      });
+    }
+  });
+
+}
+
 const getTabHandler = (evt) => {
   evt.preventDefault();
   if (evt.target.tagName !== 'A') {
@@ -28,16 +63,20 @@ const getTabHandler = (evt) => {
   }
 
   tabsNav.querySelectorAll('.tabs__link').forEach((item) => item.classList.remove('tabs__link--active'));
-  tabs.querySelectorAll('.tab').forEach((tab) => {
+
+  tabs.forEach((tab) => {
     tab.classList.add('tab--hidden');
 
-    if (tab.id === `#${evt.target.dataset.way}`) {
+    if (tab.id === evt.target.dataset.way) {
       tab.classList.remove('tab--hidden');
       evt.target.classList.add('tabs__link--active');
     }
   });
-
 }
+
+buttonsLink.forEach((button) => {
+  button.addEventListener('click', getCurrentTabHandler);
+});
 
 tabsNav.addEventListener('click', getTabHandler);
 
@@ -117,6 +156,6 @@ const openPopupHandler = () => {
   window.addEventListener('click', closeOverlayConnectionHandler);
 }
 
-buttons.forEach((button) => {
+buttonsOpenPopap.forEach((button) => {
   button.addEventListener('click', openPopupHandler);
 });

@@ -202,10 +202,10 @@
   z-index: 2;
   background-color: transparent;
   border: 1px solid $white;
-  cursor: pointer;
 }
 
 .catalog__link {
+  padding: 30px 15px;
   color: $white;
   font-family: $fontFamily;
   font-size: 14px;
@@ -213,4 +213,5 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
 }
